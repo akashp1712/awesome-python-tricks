@@ -30,6 +30,10 @@ select {
   grid-area: left;
 }
 
+#center {
+  grid-area: center;
+}
+
 #right {
   grid-area: right;
 }
@@ -43,15 +47,16 @@ select {
   grid-template-columns: repeat(1, minmax(0px, 1fr));
   grid-template-areas:
     "left"
-    "right";
+    "center";
+    "right"
 }
 
 @media only screen and (min-width: 820px) {
   #content {
     grid-column-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 300px auto 30px;
     grid-template-areas:
-      "left right";
+      "left center right";
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -64,7 +69,7 @@ select {
   margin-top: 35px;
 }
 
-#left-description {
+#left-description center-description{
   color: #d86f5a;
   font-style: italic;
   font-size: 1.1em;
@@ -77,6 +82,7 @@ select {
   background-color: white;
   padding: 5px 10px 10px 15px ;
   margin-top: 25px;
+  width: 720px;
 }
 
 #doc-title {
@@ -90,6 +96,8 @@ select {
 
 #codeblock {
   white-space: normal;
+    width: 720px;
+    height: 500px;
 }
 
 #code {
