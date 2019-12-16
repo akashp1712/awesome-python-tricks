@@ -1,3 +1,5 @@
+// TODO: remove unnecessary js code
+
 $(document).ready(function(){
   loadFirstSelectorData();
   loadSecondSelectorData();
@@ -142,3 +144,4 @@ $(document).ready(function(){
     $('#documentation').html(text);
   }
 });
+
