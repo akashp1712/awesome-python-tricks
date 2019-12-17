@@ -97,7 +97,7 @@ select {
 #codeblock {
   white-space: normal;
     width: 720px;
-    height: 500px;
+    height: auto;
 }
 
 #code {
