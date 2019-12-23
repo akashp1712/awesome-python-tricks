@@ -4,8 +4,12 @@ $(document).ready(function(){
 
     function loadTheData() {
 
-        var itemName = 'extend';
-        var codeData = pythonData['data'][itemName];
+        var data = pythonData['data'];
+        var keys = Object.keys(data);
+        var itemKey = keys[randomNumber(0, keys.length)];
+        console.log(randomNumber(0, keys.length));
+        var codeData = data[itemKey];
+
         $("#code").html(codeData['text']);
 
         highlightCode();
@@ -25,5 +29,11 @@ $(document).ready(function(){
             $('pre code').each(function(i, e) {hljs.highlightBlock(e);});
         }
     }
+
+    function randomNumber(min, max) {
+        // generating number between min and max with rounding
+        return (Math.random() * (max - min) + min) << 0;
+    }
+
 });
 
