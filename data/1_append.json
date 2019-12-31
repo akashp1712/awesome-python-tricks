@@ -1,6 +1,5 @@
 {
   "data": {
-    "index": 1,
     "name": "append",
     "desc": "Adds element to the end of a list. Does not return the new list, just modifies the original.",
     "text": "nums = [2, 3, 4, 5] # [2, 3, 4, 5]<br>nums.append(8) # [2, 3, 4, 5, 8]"
