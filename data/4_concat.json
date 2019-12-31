@@ -1,0 +1,7 @@
+{
+  "data": {
+    "name": "+",
+    "desc": "Returns a new list built by adding (concatenating) two list together",
+    "text": "nums = [2, 3, 4, 5] # [2, 3, 4, 5]<br>more_nums = nums + [1, 2] # [2, 3, 4, 5, 1, 2]<br>nums # [2, 3, 4, 5]<br><br>[7, 8, 9] + [2, 3, 4, 5] + [1, 2] # [7, 8, 9, 2, 3, 4, 5, 1, 2]"
+  }
+}

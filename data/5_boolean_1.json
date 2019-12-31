@@ -1,0 +1,7 @@
+{
+  "data": {
+    "name": "Boolean Confusion 1 - empty list",
+    "desc": "An empty list ie, bool([]) returns False.<br/>Usually, an empty list has a different meaning than None.<br/>",
+    "text": "list1 = []<br/>bool(list1) # prints False<br/>list2 = [10, 20, 30]<br/>bool(list2) # prints True<br/><br/>#None means no value while an empty list means zero values.<br/>#Semantically, they are different."
+  }
+}
