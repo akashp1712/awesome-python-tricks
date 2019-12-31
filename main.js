@@ -4,32 +4,66 @@ $(document).ready(function(){
 
     function loadTheData() {
 
-        var data = pythonData['data'];
-        var keys = Object.keys(data);
-        var itemKey = keys[randomNumber(0, keys.length)];
-        console.log(randomNumber(0, keys.length));
-        var codeData = data[itemKey];
+        // Read the data
 
-        $("#code").html(codeData['text']);
+        //var data = pythonData['data'];
+        //var keys = Object.keys(data);
+        //var itemKey = keys[randomNumber(0, keys.length)];
+        //var codeData = data[itemKey];
 
-        highlightCode();
-        updateDocumentation();
+        var baseURL = "https://akashp1712.github.io/python-everyday";
+        var dataDir = "data";
+        var metaFileName = "metadata.json";
 
-        function updateDocumentation(itemName) {
-            var elem = [];
-            elem[0] = "<h2 id='doc-title'>" + codeData['name'] + '</h2>';
-            elem[1] = '<div>' + codeData['desc'] + '</div>';
+        var countURL = baseURL + "/" + dataDir + "/" + metaFileName;
 
-            var text = elem.join('');
+           fetch(countURL)
+                .then(res => res.json())
+                .then(json => {
+                    //json vaiable contains object with data
+                    filesData = json['data'];
+                    files = countData["files"];
+                    var randomNumber = randomNumber(1, files.length);
+                    var fileName = files[randomNumber];
+                    fetchData(fileName);
 
-            $('#documentation').html(text);
-        }
+                })
 
-        function highlightCode() {
-            $('pre code').each(function(i, e) {hljs.highlightBlock(e);});
+        function fetchData(fileName) {
+
+            var fileURL = baseURL + "/" + dataDir + "/" + fileName;
+
+            fetch(fileURL)
+                .then(res => res.json())
+                .then(json => {
+                    //json vaiable contains object with data
+                    codeData = json['data']
+                    displayData(codeData);
+                })
+
+            function displayData(codeData) {
+                // Display the data
+                $("#code").html(codeData['text']);
+
+                highlightCode();
+                updateDocumentation();
+
+                function updateDocumentation() {
+                    var elem = [];
+                    elem[0] = "<h2 id='doc-title'>" + codeData['name'] + '</h2>';
+                    elem[1] = '<div>' + codeData['desc'] + '</div>';
+
+                    var text = elem.join('');
+
+                    $('#documentation').html(text);
+                }
+
+                function highlightCode() {
+                    $('pre code').each(function(i, e) {hljs.highlightBlock(e);});
+                }
+            }
         }
     }
-
     function randomNumber(min, max) {
         // generating number between min and max with rounding
         return (Math.random() * (max - min) + min) << 0;
@@ -67,4 +101,6 @@ $(document).ready(function(){
         }
         return range;
     }
+
 });
+
