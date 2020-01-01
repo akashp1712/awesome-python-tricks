@@ -6,14 +6,9 @@ $(document).ready(function(){
 
         // Read the data
 
-        //var data = pythonData['data'];
-        //var keys = Object.keys(data);
-        //var itemKey = keys[randomNumber(0, keys.length)];
-        //var codeData = data[itemKey];
-
         var baseURL = "https://akashp1712.github.io/python-everyday";
         var dataDir = "data";
-        var metaFileName = "metadata.json";
+        var metaFileName = "0_metadata.json";
 
         var countURL = baseURL + "/" + dataDir + "/" + metaFileName;
 
@@ -22,11 +17,9 @@ $(document).ready(function(){
                 .then(json => {
                     //json vaiable contains object with data
                     filesData = json['data'];
-                    files = countData["files"];
-                    var randomNumber = randomNumber(1, files.length);
-                    var fileName = files[randomNumber];
+                    files = filesData["files"];
+                    var fileName = files[randomNumber(1, files.length)];
                     fetchData(fileName);
-
                 })
 
         function fetchData(fileName) {
