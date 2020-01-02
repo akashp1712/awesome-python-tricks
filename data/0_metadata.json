@@ -1,6 +1,9 @@
 {
-  "data": {
-    "files": ["1_append.json", "2_insert.json", "3_extend.json", "4_concat.json",
-              "5_boolean_1.json"]
-  }
+  "files": [
+    "1_append.json",
+    "2_insert.json",
+    "3_extend.json",
+    "4_concat.json",
+    "5_boolean_1.json"
+  ]
 }
