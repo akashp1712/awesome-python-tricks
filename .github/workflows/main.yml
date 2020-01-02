@@ -1,7 +1,7 @@
 name: A workflow to generate list of files from data folder and write to metqadata file
 on: push
 jobs:
-  autopep8:
+  generate-metadata:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
