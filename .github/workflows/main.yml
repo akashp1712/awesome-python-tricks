@@ -13,4 +13,4 @@ jobs:
           git config --global user.email 'akashp1712@gmail.com'
           git remote set-url origin https://x-access-token:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/${{ github.repository }}
           git commit -am "Automated 0_metadata.json file changes"
-          git push
+          git push origin HEAD:master --force
