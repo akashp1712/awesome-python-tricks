@@ -1,0 +1,7 @@
+{
+  "data": {
+    "name": "Print the file name from the path",
+    "desc": "",
+    "text": "print (os.path.basename(\"/path/to/file.txt\")) <br/># file.txt"
+  }
+}
