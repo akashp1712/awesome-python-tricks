@@ -1,0 +1,16 @@
+name: A workflow to generate list of files from data folder and write to metqadata file
+on: push
+jobs:
+  autopep8:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Add list of files to a metadata file
+        uses: ./action-generate-index
+      - name: Commit File changes
+        run: |
+          git config --global user.name 'Akash Panchal'
+          git config --global user.email 'akashp1712@gmail.com'
+          git remote set-url origin https://x-access-token:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/${{ github.repository }}
+          git commit -am "Automated 0_metadata.json file changes"
+          git push
