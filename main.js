@@ -16,8 +16,7 @@ $(document).ready(function(){
                 .then(res => res.json())
                 .then(json => {
                     //json vaiable contains object with data
-                    filesData = json['data'];
-                    files = filesData["files"];
+                    files = json['files'];
                     var fileName = files[randomNumber(1, files.length)];
                     fetchData(fileName);
                 })
