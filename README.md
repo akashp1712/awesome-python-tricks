@@ -1,4 +1,4 @@
-# [Python Everyday](https://akashp1712.github.io/python-everyday/)
+# [Python Tricks](https://akashp1712.github.io/python-tricks/)
 * Awesome python tips and tricks, you can't ignore. Everyday.
 
 ## Reference Articles
