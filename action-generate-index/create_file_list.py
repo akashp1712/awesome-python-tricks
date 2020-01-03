@@ -24,4 +24,4 @@ metadata.setdefault("files", file_list)
 # add to the file
 with open(metadata_file, 'r+') as f:
     f.write(json.dumps(metadata, indent=1))
-    f.close()
+
