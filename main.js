@@ -6,7 +6,7 @@ $(document).ready(function(){
 
         // Read the data
 
-        var baseURL = "https://akashp1712.github.io/python-everyday";
+        var baseURL = "https://akashp1712.github.io/python-tricks";
         var dataDir = "data";
         var metaFileName = "0_metadata.json";
 
