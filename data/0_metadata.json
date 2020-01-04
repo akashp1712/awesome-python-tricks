@@ -1,10 +1,10 @@
 {
  "files": [
   "0_metadata.json",
-  "1_append.json",
-  "2_insert.json",
-  "3_extend.json",
-  "4_concat.json",
+  "5_boolean_1.json",
+  "6_get_filename_from_path.json"
+ ]
+}4_concat.json",
   "5_boolean_1.json",
   "6_get_filename_from_path.json"
  ]
