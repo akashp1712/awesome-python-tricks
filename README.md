@@ -7,5 +7,5 @@
 Just print the file name with extension from the any path
 
 ```python
-print (os.path.basename(\"/path/to/file.txt\")) <br/> # file.txt
+print (os.path.basename("/path/to/file.txt")) # file.txt
 ```
