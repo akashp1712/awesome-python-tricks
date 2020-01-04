@@ -10,6 +10,8 @@ metadata_file = 'data/0_metadata.json'
 
 # if given empty path, it starts from the current directory
 files = [f for f in glob.glob(path + "**/*" + extension, recursive=True)]
+
+
 file_list = []
 
 for file in files:
@@ -17,8 +19,9 @@ for file in files:
     filename = os.path.basename(file)
     file_list.append(filename)
 
+file_list.sort()
 metadata = {}
-metadata.setdefault("files", file_list.sort())
+metadata.setdefault("files", file_list)
 # add to the file
 with open(metadata_file, 'r+') as f:
     f.write(json.dumps(metadata, indent=1))
