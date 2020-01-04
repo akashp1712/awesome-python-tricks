@@ -3,9 +3,22 @@
 
 ----
 
-### Print the file name from the path
+- ### Print the file name from the path
 Just print the file name with extension from the any path
 
 ```python
 print (os.path.basename("/path/to/file.txt")) # file.txt
+```
+
+- ### Boolean Confusion 1 - empty list
+An empty list ie, bool([]) returns False.<br/>Usually, an empty list has a different meaning than None.<br/>
+
+```python
+list1 = []
+bool(list1) # prints False
+list2 = [10, 20, 30]
+bool(list2) # prints True
+
+#None means no value while an empty list means zero values.
+#Semantically, they are different.
 ```
