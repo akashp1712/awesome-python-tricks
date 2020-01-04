@@ -1,7 +1,7 @@
 {
  "files": [
-  "0_metadata.json",
   "1_append.json",
+  "0_metadata.json",
   "2_insert.json",
   "3_extend.json",
   "4_concat.json",
