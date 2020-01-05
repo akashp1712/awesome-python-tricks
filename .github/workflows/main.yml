@@ -5,13 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Add list of files to a metadata file
-        uses: ./action-generate-index
+      - name: Add list of files to a metadata file and generate Readme
+        uses: ./action-generate-readme
       - name: Commit File changes
         run: |
           git config --global user.name 'Akash Panchal'
           git config --global user.email 'akashp1712@gmail.com'
-          git commit -m "Automated 0_metadata.json file changes" -a
+          # git commit -m "Automated 0_metadata.json file changes" -a
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "Automated README.md & 0_metadata.json file changes"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
