@@ -2,6 +2,6 @@
   "data": {
     "name": "Print the file name from the path",
     "desc": "Just print the file name with extension from the any path",
-    "text": "print (os.path.basename(\"/path/to/file.txt\")) <br/># file.txt"
+    "code": ["print (os.path.basename(\"/path/to/file.txt\"))", "# file.txt"]
   }
 }
