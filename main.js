@@ -35,7 +35,16 @@ $(document).ready(function(){
 
             function displayData(codeData) {
                 // Display the data
-                $("#code").html(codeData['text']);
+
+                codeLines = codeData['code'];
+
+                var codeElem = "";
+
+                codeLines.forEach(function(value) {
+                    codeElem = codeElem + value + "<br>";
+                });
+
+                $("#code").html(codeElem);
 
                 highlightCode();
                 updateDocumentation();
