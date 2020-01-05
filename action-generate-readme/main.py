@@ -13,7 +13,7 @@ def update_readme_file(new_file_list, data_folder_path, readme_file_path):
         desc = content_data['desc']  # Type: str
         code = content_data['code']  # Type: list<str>
 
-        template = ["### {}".format(name),
+        template = ["- ### {}".format(name),
                     "\n",
                     "{}".format(desc),
                     "\n",
