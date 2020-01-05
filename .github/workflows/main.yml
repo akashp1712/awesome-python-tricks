@@ -1,5 +1,9 @@
 name: A workflow to generate list of files from data folder and write to metqadata file
-on: push
+on:
+  push:
+    paths:
+    - 'data/**.json'
+    - '!data/0_metadata.json'
 jobs:
   generate-metadata:
     runs-on: ubuntu-latest
