@@ -26,5 +26,5 @@ Assertion never fails when the first argument is a tupple. It Always evaluates a
 assert("python" == "java", 'Assert Failed')
 # This will always be true and will never fail.
 # Following is the right way of doing it" 
-assert \"python\" == \"java\", 'Assert Failed'
+assert "python" == "java", 'Assert Failed'
 ```
