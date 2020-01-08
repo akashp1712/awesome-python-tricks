@@ -20,3 +20,9 @@ Just print the file name with extension from the any path
 print (os.path.basename("/path/to/file.txt"))
 # file.txt
 ```
+- ### Asserts that never fail
+Assertion never fails when the first argument is a tupple. It Always evaluates as true
+```python
+assert("python" == "java", 'Assert Failed')
+# This will always be true and will never fail.
+```
