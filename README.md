@@ -28,3 +28,13 @@ assert("python" == "java", 'Assert Failed')
 # Following is the right way of doing it" 
 assert "python" == "java", 'Assert Failed'
 ```
+- ### Underscores explained
+Underscores in Python and what do they mean
+```python
+_var # Preferred convention for internal variables and methods
+var_ # Used to avoid naming conflicts with Python keywords
+__var # Used for [name mangling](https://dbader.org/blog/meaning-of-underscores-in-python) by Python when used in class context
+    # Python interpreter changes the name of the variable to avoid collision with child class
+__var__ # Reserved for special use in the language
+ - # Used as a temporary or don't care varaibles
+```

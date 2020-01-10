@@ -3,6 +3,7 @@
   "0_metadata.json",
   "1_get_filename_from_path.json",
   "2_boolean_1.json",
-  "3_assert_1.json"
+  "3_assert_1.json",
+  "4_underscore.json"
  ]
 }
