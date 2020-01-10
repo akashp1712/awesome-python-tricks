@@ -39,9 +39,10 @@ __var__ # Reserved for special use in the language
  - # Used as a temporary or don't care varaibles
 ```
 - ### The Zen of Python, by Tim Peters
-Open your python console and **`import this`**
+Open your python console and hit **`import this`**
 ```python
 The Zen of Python, by Tim Peters
+
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
