@@ -6,6 +6,7 @@
   "3_assert_1.json",
   "4_underscore.json",
   "5_zen.json",
-  "6_print_object_attributes.json"
+  "6_print_object_attributes.json",
+  "7_disassembler.json"
  ]
 }

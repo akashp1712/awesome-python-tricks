@@ -78,3 +78,26 @@ str = "This is a String"
 print(dir(str))
 # ['__add__', '__class__', '__contains__', '__delattr__', ..., 'title', 'translate', 'upper', 'zfill']
 ```
+- ### Disassembler for Python bytecode
+Disassembler helps understanding the object by converting it to a human-readable representation of the bytecodes for analysis.
+```python
+def my_name():
+...     return "Akash"
+...
+
+>>> dis.dis(my_name)
+  2           0 LOAD_CONST               1 ('Akash')
+ 
+3 RETURN_VALUE 
+
+
+>>> def my_name():
+...     print("Akash")
+...
+>>> dis.dis(my_name)
+  2           0 LOAD_CONST               1 ('Akash')
+              3 PRINT_ITEM
+              4 PRINT_NEWLINE
+              5 LOAD_CONST               0 (None)
+              8 RETURN_VALUE
+```
