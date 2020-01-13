@@ -63,3 +63,18 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 ```
+- ### Print the Object Attributes
+Use the built-in **`dir()`** funciton to print attribute of an object.
+```python
+lst = list()
+print(dir(lst))
+# ['__add__', '__class__', '__contains__', '__delattr__', ..., 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+number = 123
+print(dir(number))
+# ['__abs__', '__add__', '__and__', '__bool__', '__ceil__', ..., 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+
+str = "This is a String"
+print(dir(str))
+# ['__add__', '__class__', '__contains__', '__delattr__', ..., 'title', 'translate', 'upper', 'zfill']
+```
