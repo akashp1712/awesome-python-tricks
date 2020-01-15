@@ -101,3 +101,15 @@ def my_name():
               5 LOAD_CONST               0 (None)
               8 RETURN_VALUE
 ```
+- ### Implement map (built-in pytohn function)
+`map` is a higher-order function.<br/>It takes a function object and an iterable And calls the fucntion on each element in the iterable, yielding the results as it goes along
+```python
+def map2(func, iter):
+    for val in iter:
+        yield func(val)
+
+# The above method can be used as bellow similar to `map` function
+lst = list(map2(str.upper, ['Save Earth', 'Save Animals', 'Save water']))
+print(lst)
+#['SAVE EARTH', 'SAVE ANIMALS', 'SAVE WATER']
+```
