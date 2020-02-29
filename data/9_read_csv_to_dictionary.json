@@ -1,0 +1,14 @@
+{
+  "data": {
+    "name": "Read csv data to Dictionary",
+    "desc": "Read csv data with headers and convert to Dictionary where each column header is key.",
+    "code": ["import csv",
+            "",
+            "with open( <path-to-file>, 'r' ) as theFile:",
+            "    reader = csv.DictReader(theFile)",
+            "    for line in reader:",
+            "        # line is { 'house_name': 'Houstan', 'price': 7.334, 'age': 5, ... }",
+            "        print (line)"
+      ]
+  }
+}
