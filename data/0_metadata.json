@@ -8,6 +8,7 @@
   "5_zen.json",
   "6_print_object_attributes.json",
   "7_disassembler.json",
-  "8_implement_map_func.json"
+  "8_implement_map_func.json",
+  "9_read_csv_to_dictionary.json"
  ]
 }

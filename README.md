@@ -113,3 +113,14 @@ lst = list(map2(str.upper, ['Save Earth', 'Save Animals', 'Save water']))
 print(lst)
 #['SAVE EARTH', 'SAVE ANIMALS', 'SAVE WATER']
 ```
+- ### Read csv data to Dictionary
+Read csv data with headers and convert to Dictionary where each column header is key.
+```python
+import csv
+
+with open( <path-to-file>, 'r' ) as theFile:
+    reader = csv.DictReader(theFile)
+    for line in reader:
+        # line is { 'house_name': 'Houstan', 'price': 7.334, 'age': 5, ... }
+        print (line)
+```
