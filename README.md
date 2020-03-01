@@ -124,3 +124,13 @@ with open( <path-to-file>, 'r' ) as theFile:
         # line is { 'house_name': 'Houstan', 'price': 7.334, 'age': 5, ... }
         print (line)
 ```
+- ### Iterate through a pair of lists
+Use zip() to iterate through a pair of lists
+```python
+namelist = ["Avish", "Piyush", "Tom"]
+agelist = [17, 22, 38]
+
+for name, age in zip(namelist, agelist):
+    print(name, age)
+
+```
