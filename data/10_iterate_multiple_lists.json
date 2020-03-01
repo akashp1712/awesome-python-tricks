@@ -3,7 +3,7 @@
     "name": "Iterate through a pair of lists",
     "desc": "Use zip() to iterate through a pair of lists",
     "code": [
-            "namelist = ["Avish", "Piyush", ""Tom]",
+            "namelist = [\"Avish\", \"Piyush\", \"Tom\"]",
             "agelist = [17, 22, 38]",
             "",
             "for name, age in zip(namelist, agelist):",
