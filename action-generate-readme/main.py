@@ -16,7 +16,7 @@ def update_readme_file(new_file_list, data_folder_path, readme_file_path):
         template = ["- ### {}".format(name),
                     "\n",
                     "{}".format(desc),
-                    "\n",
+                    "\n\n",
                     "```python",
                     "\n"]
 
