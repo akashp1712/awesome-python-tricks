@@ -1,7 +1,7 @@
 # [Awesome Python Tricks](https://akashp1712.github.io/python-tricks/) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 * Awesome python tips and tricks, you can't ignore.
 
-    [View a random trick](https://akashp1712.github.io/python-tricks/random){: .btn .btn-green }
+    [View a random trick](https://akashp1712.github.io/python-tricks/random)
 
 ----
 
