@@ -61,47 +61,24 @@ $(document).ready(function(){
 
                 function highlightCode() {
                     $('pre code').each(function(i, e) {hljs.highlightBlock(e);});
+                    highlightBadge();
                 }
+
             }
         }
     }
+
+    function highlightBadge() {
+        var options = {   // optional
+           copyIconClass: "fas fa-copy",
+           checkIconClass: "fas fa-check text-success"
+        };
+        window.highlightJsBadge(options);
+    }
+
     function randomNumber(min, max) {
         // generating number between min and max with rounding
         return (Math.random() * (max - min) + min) << 0;
     }
 
-    // Copy the code functionality
-    document.getElementById ("clickMe").addEventListener ("click", copyText, false);
-
-    function copyText() {
-      /* Get the text field */
-      var copyText = document.getElementById("codeblock");
-
-      var copytext = selectText('codeblock');
-      document.execCommand("copy");
-
-    }
-
-    function selectText(element){
-
-        var doc = document,
-        text = doc.getElementById(element)
-        var range, selection;
-
-        if(doc.body.createTextRange){
-         range = document.body.createTextRange();
-         range.moveToElementText(text);
-         range.select();
-        }
-        else if(window.getSelection){
-          selection = window.getSelection();
-          range = document.createRange();
-          range.selectNodeContents(text);
-          selection.removeAllRanges();
-          selection.addRange(range);
-        }
-        return range;
-    }
-
 });
-
