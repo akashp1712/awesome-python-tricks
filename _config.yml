@@ -1,7 +1,7 @@
 title: Python Tricks
 remote_theme: pmarsceill/just-the-docs
 description:  Useful Python Tricks
-baseurl: "/python-tricks"
+baseurl: "/awesome-python-tricks"
 url: "https://akashp1712.github.io"
 permalink: pretty
 color_scheme: nil
@@ -9,6 +9,6 @@ search_enabled: true
 search_tokenizer_separator: /[\s/]+/
 aux_links:
   "See this on GitHub":
-    - "//github.com/akashp1712/python-tricks"
+    - "//github.com/akashp1712/awesome-python-tricks"
 ga_tracking: UA-73098164-5
-footer_content: "Copyright &copy; 2020 Akash Panchal. Distributed by an <a href=\"https://github.com/akashp1712/python-tricks/blob/master/LICENSE\">Apache License 2.0.</a>"
+footer_content: "Copyright &copy; 2020 Akash Panchal. Distributed by an <a href=\"https://github.com/akashp1712/awesome-python-tricks/blob/master/LICENSE\">Apache License 2.0.</a>"
