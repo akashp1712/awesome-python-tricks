@@ -5,7 +5,7 @@ LABEL "com.github.actions.description"="Automatically generate readme from the j
 LABEL "com.github.actions.icon"="corner-up-left"
 LABEL "com.github.actions.color"="red"
 
-LABEL "repository"="https://github.com/akashp1712/python-everyday/generate-readme"
+LABEL "repository"="https://github.com/akashp1712/awesome-python-tricks/generate-readme"
 LABEL "homepage"=""
 LABEL "maintainer"="Akash <akashp1712@gmail.com>"
 
